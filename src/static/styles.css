@@ -124,18 +124,45 @@ section h3 {
 
 /* Bulleted participants list */
 .participants-list {
-  list-style: disc;
-  padding-left: 1.2rem;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
   color: #263238;
 }
 
-.participants-list li {
+.participants-list .participant-item {
   margin: 0.28rem 0;
   font-size: 0.9rem;
   background: rgba(3,102,214,0.04);
   padding: 0.18rem 0.4rem;
   border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.participant-display {
+  color: #263238;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #b91c1c;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 0.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  background: rgba(185,28,28,0.08);
 }
 
 /* No participants text */
